@@ -1,0 +1,28 @@
+     <!DOCTYPE html>
+     <html>
+     <head>
+       <title>Калькулятор</title>
+     </head>
+     <body>
+       <h1>Калькулятор</h1>
+       <form action="/calculate" method="POST">
+         <label for="num1">Первое число:</label>
+         <input type="number" id="num1" name="num1" required>
+         <br>
+         <label for="num2">Второе число:</label>
+         <input type="number" id="num2" name="num2" required>
+         <br>
+         <label for="operation">Операция:</label>
+         <select id="operation" name="operation">
+           <option value="add">Сложение</option>
+           <option value="subtract">Вычитание</option>
+           <option value="multiply">Умножение</option>
+           <option value="divide">Деление</option>
+         </select>
+         <br>
+         <button type="submit">Рассчитать</button>
+       </form>
+       <p id="result">{{ result }}</p>
+     </body>
+     </html>
+     
